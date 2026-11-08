@@ -1,7 +1,12 @@
 {
   "name": "@local/dsh-tool-call-guidance",
-  "version": "1.1.0",
-  "private": true,
+  "version": "1.1.1",
+  "private": false,
+  "author": "Jerry-George-Liang",
+  "repository": { "type": "git", "url": "git+https://github.com/Jerry-George-Liang/dsh-tool-call-guidance.git" },
+  "homepage": "https://github.com/Jerry-George-Liang/dsh-tool-call-guidance#readme",
+  "bugs": { "url": "https://github.com/Jerry-George-Liang/dsh-tool-call-guidance/issues" },
+  "keywords": ["dsh-plugin", "deepseek-harness", "tool-calling", "skills"],
   "type": "module",
   "description": "Concise persistent guidance and portable skills for selecting tools and constructing correct arguments on every call.",
   "exports": {

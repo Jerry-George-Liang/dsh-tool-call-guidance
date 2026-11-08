@@ -1,6 +1,6 @@
 # 工具调用指引
 
-`@local/dsh-tool-call-guidance` 1.1.0：让模型在每次调用前选对工具并构造正确参数，覆盖首次调用与后续步骤。
+`@local/dsh-tool-call-guidance` 1.1.1：让模型在每次调用前选对工具并构造正确参数，覆盖首次调用与后续步骤。
 
 ## 核心规则
 
@@ -22,7 +22,18 @@
 
 ## 安装
 
-通过 DSH `plugin_manager` 安装插件压缩包并启用。按返回的 `application`、`warnings`、`nextStep` 判断是否即时生效，随后实际读取 skill 验证。使用包安装时，开发目录与运行版本分离，可在开发副本验证后更新安装；直接链接源码时先停用再修改。
+适用 DSH `>=0.2.2-rc.1 <0.3.0`、Node.js 22+。本项目为社区维护插件，通过 GitHub Release 分发；尚未发布到 npm，也不代表官方认证。
+
+在 [v1.1.1 发布页](https://github.com/Jerry-George-Liang/dsh-tool-call-guidance/releases/tag/v1.1.1) 下载：
+
+- [DSH 插件包](https://github.com/Jerry-George-Liang/dsh-tool-call-guidance/releases/download/v1.1.1/local-dsh-tool-call-guidance-1.1.1.tgz)
+- [独立 skills 包](https://github.com/Jerry-George-Liang/dsh-tool-call-guidance/releases/download/v1.1.1/tool-call-guidance-skills-1.1.1.zip)
+
+可以直接对 DSH 说：
+
+> 安装并启用这个插件：https://github.com/Jerry-George-Liang/dsh-tool-call-guidance/releases/download/v1.1.1/local-dsh-tool-call-guidance-1.1.1.tgz
+
+通过 DSH `plugin_manager` 完成安装，按返回的 `application`、`warnings`、`nextStep` 判断是否即时生效，随后实际读取 skill 验证。使用包安装时，开发目录与运行版本分离，可在开发副本验证后更新安装；直接链接源码时先停用再修改。
 
 单独使用时，把完整 skill 文件夹及 `references/` 放进宿主支持的目录。要覆盖长会话和上下文压缩后的调用，还应把主 skill 的短正文放进该宿主的持久项目指令或系统指令层；仅安装可发现的 skill 不等于其正文始终在上下文中。DSH 插件已自动完成此步骤。
 
