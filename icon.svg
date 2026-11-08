@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Prepared tool steps">
+  <rect width="64" height="64" rx="14" fill="#163b56"/>
+  <rect x="14" y="10" width="36" height="44" rx="5" fill="#eff8ff"/>
+  <path d="M27 21h14M27 31h14M27 41h9" fill="none" stroke="#3880a4" stroke-width="3" stroke-linecap="round"/>
+  <path d="m19 21 2 2 3-4m-5 12 2 2 3-4m-5 12 2 2 3-4" fill="none" stroke="#1b9370" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m41 47 5 5 9-11" fill="none" stroke="#54d8a8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "name": "@local/dsh-tool-call-guidance",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Concise persistent guidance and portable skills for selecting tools and constructing correct arguments on every call.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "skills/", "README.md", "LICENSE", "test/*.test.js"],
+  "engines": { "node": ">=22", "dsh": ">=0.2.2-rc.1 <0.3.0" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "license": "MIT",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: local-tool-call-guidance
+      name: '@local/dsh-tool-call-guidance'
+      config: {}
